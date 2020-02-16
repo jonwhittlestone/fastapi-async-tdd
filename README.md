@@ -28,3 +28,7 @@ Developing and Testing an Asynchronous API with FastAPI and Pytest
 
           hello_fastapi_dev=# \l
 
+5. Try out the `POST` route with [HTTPie](https://httpie.org/doc#installation)
+
+
+        http --json POST http://localhost:8002/notes/ title=Foo description=bar
