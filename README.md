@@ -5,7 +5,7 @@ Developing and Testing an Asynchronous API with FastAPI and Pytest
 
 - testdriven.io [article](https://testdriven.io/blog/fastapi-crud/)
 
-## Steps
+## Basics
 
 1. Build the docker image
 
@@ -17,3 +17,14 @@ Developing and Testing an Asynchronous API with FastAPI and Pytest
 
 
         docker-compose exec web pytest .
+
+4. Ensure the `notes` table was added
+
+    - Get a psql prompt from the postgres container
+
+          docker-compose exec db psql --username=hello_fastapi --dbname=hello_fastapi_dev
+
+    - List databases
+
+          hello_fastapi_dev=# \l
+
